@@ -1,6 +1,6 @@
 const clientId = '143accff119c4de88e82b37743d7da5c';//api client ID
 const redirectUri = 'http://localhost:3000/';
-const accessToken = 'accessToken';
+let accessToken ;
 
 const Spotify = {
     getAccessToken() {
@@ -13,7 +13,7 @@ const Spotify = {
 
         if (accessTokenMatch && expiresInMatch) {
             accessToken = accessTokenMatch[1];
-            const expiresIn = Number(expiresInMatch[1]);
+            let expiresIn = Number(expiresInMatch[1]);
             //this clears the parametes, allowing us to acess a new token when it expires.
             window.setTimeout(() => accessToken = '', expiresIn * 1000);
             window.history.pushState('Access Token', null, '/');
