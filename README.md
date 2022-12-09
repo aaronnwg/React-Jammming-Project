@@ -1,1 +1,2 @@
 # React-Jammming-Project
+This is a codecademy.com React project. The instrructions are to build a React web application that uses the Spotify API to allow users to search the Spotify library, create a custom playlist, then save it to their Spotify account. the website is deployed to 'http://dark-knee.surge.sh'. In order to use the website, a spotify api client ID must be added in the spotify.js file.
