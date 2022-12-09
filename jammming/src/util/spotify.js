@@ -1,5 +1,5 @@
-const clientId = //api client ID;
-const redirectUri = 'http://localhost:3000/';
+const clientId = //spotify api client ID;
+const redirectUri = 'http://dark-knee.surge.sh';
 let accessToken ;
 
 const Spotify = {
